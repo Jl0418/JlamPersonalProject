@@ -3,14 +3,45 @@
   <head>
     <title>Main Page</title>
     <meta charset="UTF-8">
+    <style>
+      /* Apply a blue gradient background to the whole page */
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #4facfe, #00f2fe);
+        min-height: 100vh; /* ensures gradient fills full page height */
+        color: white; /* makes text readable on blue background */
+      }
+
+      /* Center the content */
+      h1, p, .navbar {
+        text-align: center;
+      }
+
+      /* Style navigation buttons */
+      .nav-button {
+        display: inline-block;
+        margin: 10px;
+        padding: 10px 20px;
+        background-color: rgba(255, 255, 255, 0.2); /* semi-transparent */
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background 0.3s;
+      }
+
+      .nav-button:hover {
+        background-color: rgba(255, 255, 255, 0.4);
+      }
+    </style>
   </head>
   <body>
-  <h1>Welcome To The Main Page For Navigating</h1>
-  <p>In Progress Website Building</p>
-  <nav class="navbar">
-  <a href="https://docs.google.com/document/d/1tCBNModjb8pZJfL34R9gq7RVb-UkHVE2ttfwACpdWZw/edit?usp=sharing" class="nav-button">Resume</a>
-  <a href="AboutMe.html" class="nav-button">Learn About Me</a>
-  <a href="Contacts.html" class="nav-button">Contact</a>
-  </nav>
+    <h1>Welcome To The Main Page For Navigating</h1>
+    <p>In Progress Website Building</p>
+    <nav class="navbar">
+      <a href="https://docs.google.com/document/d/1tCBNModjb8pZJfL34R9gq7RVb-UkHVE2ttfwACpdWZw/edit?usp=sharing" class="nav-button">Resume</a>
+      <a href="AboutMe.html" class="nav-button">Learn About Me</a>
+      <a href="Contacts.html" class="nav-button">Contact</a>
+    </nav>
   </body>
 </html>
