@@ -1,2 +1,2 @@
 # JlamPersonalProject
-WIP Personal Project
+WIP Personal Project whenever I have time balancing my classes.
