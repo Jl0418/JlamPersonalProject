@@ -1,17 +1,56 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>About Jefford</title>
-    <meta charset="UTF-8">
-  </head>
-  <body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Jefford</title>
+</head>
+
+<body>
   <h1>Jefford Y Lam</h1>
   <h3>Computer Science Student @ Hunter College</h3>
-  <p>I am a current student at Hunter College majoring in Computer Science. Open to gaining any hands-on experience in Computer Science in fields such as Database Management using SQL and etc. I've developed experience in Web Development using CSS, HTML & Javascript, Creating an Auction Database Table using SQL, and using C++ to create school projects. 
-     I enjoy using different languages and learning them to create projects that potentially benefit peoeple.</p>
 
-  <p>Through working in team projects and using free time to create personal projects. Using free time to create these projects I start to develop skills as mentioned above. I am currently working on the portfolio website which contains my work and resume. In addition I plan to work on different projects that use the other languages mentioned.</p>
+  <p>
+    I am a current student at Hunter College majoring in Computer Science.
+    I am open to gaining hands-on experience in areas such as database
+    management using SQL and web development using HTML, CSS, and JavaScript.
+  </p>
 
-  <p>During the time i'm not coding I play video games with my friends to communicate and try and lead the group to winning. I also take part in the Trading Card hobby both collecting and playing which helped me develop strategy thinking and planning for future moves. Although these hobbies don't sound relatable to my major it helps keep my stress controlled as well as help me think for future moves that might occur.</p>
-  </body>
+  <p>
+    Through both team projects and personal projects, I have developed
+    experience in SQL database design, C++, and frontend development.
+    This website serves as a portfolio of my work and ongoing projects.
+  </p>
+
+  <p>
+    Outside of coding, I enjoy strategy-based hobbies such as trading card
+    games and collaborative video games, which reinforce planning and
+    long-term thinking.
+  </p>
+
+  <hr>
+
+  <h2>How I Track My Spending</h2>
+
+  <p>
+    I track personal expenses using a MySQL database that I designed myself.
+    The data below is exported as JSON and displayed dynamically on this page
+    using JavaScript. This reflects both my technical interests and my
+    habit of organizing real-world data.
+  </p>
+
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Amount ($)</th>
+      </tr>
+    </thead>
+    <tbody id="spending-table"></tbody>
+  </table>
+
+  <p id="total-spent"></p>
+
+  <!-- Load JS at the end -->
+  <script src="script.js"></script>
+</body>
 </html>
