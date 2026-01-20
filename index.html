@@ -1,48 +1,123 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Main Page</title>
-    <meta charset="UTF-8">
-    <style>
-      /* Apply a blue gradient background to the whole page */
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: linear-gradient(to right, #4facfe, #00f2fe);
-        min-height: 100vh; /* ensures gradient fills full page height */
-        color: white; /* makes text readable on blue background */
-      }
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Main Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      min-height: 100vh;
+      color: white;
+    }
 
-      /* Center the content */
-      h1, p, .navbar {
-        text-align: center;
-      }
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 80px 20px 40px;
+    }
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      opacity: 0.9;
+    }
 
-      /* Style navigation buttons */
-      .nav-button {
-        display: inline-block;
-        margin: 10px;
-        padding: 10px 20px;
-        background-color: rgba(255, 255, 255, 0.2); /* semi-transparent */
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: background 0.3s;
-      }
+    /* Card Container */
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+      gap: 20px;
+    }
 
-      .nav-button:hover {
-        background-color: rgba(255, 255, 255, 0.4);
+    /* Individual Card */
+    .card {
+      background-color: rgba(255, 255, 255, 0.15);
+      padding: 30px 20px;
+      width: 200px;
+      border-radius: 12px;
+      text-align: center;
+      transition: transform 0.3s, background-color 0.3s;
+      backdrop-filter: blur(5px); /* adds frosted glass effect */
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      background-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .card h3 {
+      margin: 0 0 15px;
+      font-size: 1.5em;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 15px;
+      background: white;
+      color: #4facfe;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .card a:hover {
+      background: #4facfe;
+      color: white;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
       }
-    </style>
-  </head>
-  <body>
-    <h1>Welcome To The Main Page For Navigating</h1>
-    <p>In Progress Website Building</p>
-    <nav class="navbar">
-      <a href="https://docs.google.com/document/d/1tCBNModjb8pZJfL34R9gq7RVb-UkHVE2ttfwACpdWZw/edit?usp=sharing" class="nav-button">Resume</a>
-      <a href="AboutMe.html" class="nav-button">Learn About Me</a>
-      <a href="Contacts.html" class="nav-button">Contact</a>
-      <a href="https://github.com/Jl0418/Games-CPlusPlus" class="nav-button" target="_blank"> </a>
-    </nav>
-  </body>
+      .card {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Welcome to My Personal Website</h1>
+    <p>In-progress website showcasing my projects and resume</p>
+  </div>
+
+  <!-- Cards Section -->
+  <div class="cards">
+    <div class="card">
+      <h3>Resume</h3>
+      <p>Check out my professional experience</p>
+      <a href="https://docs.google.com/document/d/1tCBNModjb8pZJfL34R9gq7RVb-UkHVE2ttfwACpdWZw/edit?usp=sharing" target="_blank">View Resume</a>
+    </div>
+
+    <div class="card">
+      <h3>Learn About Me</h3>
+      <p>Know more about my skills and hobbies</p>
+      <a href="AboutMe.html">About Me</a>
+    </div>
+
+    <div class="card">
+      <h3>Contact</h3>
+      <p>Get in touch with me</p>
+      <a href="Contacts.html">Contact</a>
+    </div>
+
+    <div class="card">
+      <h3>Games</h3>
+      <p>View my GitHub projects</p>
+      <a href="https://github.com/Jl0418/Games-CPlusPlus" target="_blank">GitHub Repo</a>
+    </div>
+  </div>
+</body>
 </html>
