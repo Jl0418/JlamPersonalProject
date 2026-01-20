@@ -1,0 +1,32 @@
+[
+	{
+		"SpendingID" : 1,
+		"UserID" : 1,
+		"ExpenseDate" : "2026-01-02",
+		"Amount" : 249.82
+	},
+	{
+		"SpendingID" : 2,
+		"UserID" : 1,
+		"ExpenseDate" : "2026-01-08",
+		"Amount" : 24.48
+	},
+	{
+		"SpendingID" : 3,
+		"UserID" : 1,
+		"ExpenseDate" : "2026-01-12",
+		"Amount" : 85.28
+	},
+	{
+		"SpendingID" : 4,
+		"UserID" : 1,
+		"ExpenseDate" : "2026-01-14",
+		"Amount" : 172.36
+	},
+	{
+		"SpendingID" : 5,
+		"UserID" : 1,
+		"ExpenseDate" : "2026-01-20",
+		"Amount" : 4.99
+	}
+]
