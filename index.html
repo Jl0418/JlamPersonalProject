@@ -9,15 +9,46 @@
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #4facfe, #00f2fe);
+      background: linear-gradient(-45deg, #4facfe, #00f2fe, #43e97b, #38f9d7);
+      background-size: 400% 400%;
+      animation: gradientShift 15s ease infinite;
       min-height: 100vh;
       color: white;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    @keyframes gradientShift {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    /* Floating shapes */
+    .bg-shape {
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      opacity: 0.08;
+      border-radius: 50%;
+      background: white;
+      animation: float 15s infinite alternate;
+    }
+    .bg-shape:nth-child(1) { top: 10%; left: 5%; animation-delay: 0s; }
+    .bg-shape:nth-child(2) { top: 40%; left: 80%; animation-delay: 3s; }
+    .bg-shape:nth-child(3) { top: 70%; left: 20%; animation-delay: 6s; }
+
+    @keyframes float {
+      0% { transform: translateY(0) translateX(0);}
+      100% { transform: translateY(-50px) translateX(30px);}
     }
 
     /* Hero Section */
     .hero {
       text-align: center;
       padding: 80px 20px 40px;
+      position: relative;
+      z-index: 1;
     }
     .hero h1 {
       font-size: 3em;
@@ -35,6 +66,8 @@
       justify-content: center;
       padding: 40px 20px;
       gap: 20px;
+      position: relative;
+      z-index: 1;
     }
 
     /* Individual Card */
@@ -45,7 +78,7 @@
       border-radius: 12px;
       text-align: center;
       transition: transform 0.3s, background-color 0.3s;
-      backdrop-filter: blur(5px); /* adds frosted glass effect */
+      backdrop-filter: blur(5px);
     }
     .card:hover {
       transform: translateY(-10px);
@@ -74,19 +107,122 @@
       color: white;
     }
 
+    /* Projects Section */
+    .projects {
+      text-align: center;
+      padding: 60px 20px;
+      position: relative;
+      z-index: 1;
+    }
+    .projects h2 {
+      font-size: 2.5em;
+      margin-bottom: 30px;
+    }
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      justify-items: center;
+    }
+    .project-card {
+      background: rgba(255,255,255,0.15);
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      backdrop-filter: blur(5px);
+      transition: transform 0.3s, background 0.3s;
+      width: 100%;
+    }
+    .project-card:hover {
+      transform: translateY(-8px);
+      background: rgba(255,255,255,0.25);
+    }
+    .project-card img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .project-card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 6px 12px;
+      background: white;
+      color: #4facfe;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
+    }
+    .project-card a:hover {
+      background: #4facfe;
+      color: white;
+    }
+
+    /* Skills Section */
+    .skills {
+      text-align: center;
+      padding: 60px 20px;
+      position: relative;
+      z-index: 1;
+    }
+    .skills h2 {
+      font-size: 2.5em;
+      margin-bottom: 30px;
+    }
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+    .skill {
+      background: rgba(255,255,255,0.2);
+      padding: 10px 15px;
+      border-radius: 8px;
+      font-weight: 600;
+      min-width: 100px;
+      text-align: center;
+      transition: background 0.3s;
+    }
+    .skill:hover {
+      background: rgba(255,255,255,0.35);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: rgba(0,0,0,0.2);
+      margin-top: 40px;
+      position: relative;
+      z-index: 1;
+    }
+    footer a {
+      color: white;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+
     /* Responsive */
     @media (max-width: 600px) {
-      .cards {
+      .cards, .project-grid, .skills-grid {
         flex-direction: column;
         align-items: center;
       }
-      .card {
+      .card, .project-card {
         width: 80%;
       }
     }
   </style>
 </head>
 <body>
+  <!-- Floating background shapes -->
+  <div class="bg-shape"></div>
+  <div class="bg-shape"></div>
+  <div class="bg-shape"></div>
+
   <!-- Hero Section -->
   <div class="hero">
     <h1>Welcome to My Personal Website</h1>
@@ -119,5 +255,47 @@
       <a href="https://github.com/Jl0418/Games-CPlusPlus" target="_blank">GitHub Repo</a>
     </div>
   </div>
+
+  <!-- Projects Section -->
+  <section class="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="project1.png" alt="Project 1">
+        <h3>Project 1</h3>
+        <p>Short description of Project 1.</p>
+        <a href="#">View Repo</a>
+      </div>
+      <div class="project-card">
+        <img src="project2.png" alt="Project 2">
+        <h3>Project 2</h3>
+        <p>Short description of Project 2.</p>
+        <a href="#">View Repo</a>
+      </div>
+      <!-- Add more projects here -->
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">C++</div>
+      <div class="skill">HTML & CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Python</div>
+      <!-- Add more skills here -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Jefford Lam</p>
+    <p>
+      <a href="mailto:your.email@example.com">Email</a> |
+      <a href="https://github.com/Jl0418" target="_blank">GitHub</a> |
+      <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+    </p>
+  </footer>
 </body>
 </html>
