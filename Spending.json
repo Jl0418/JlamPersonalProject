@@ -46,5 +46,17 @@
 		"UserID" : 1,
 		"ExpenseDate" : "2026-01-23",
 		"Amount" : 13.07
+	},
+	{
+		"SpendingID" : 9,
+		"UserID" : 1,
+		"ExpenseDate" : "2026-01-24",
+		"Amount" : 38.10
+	},
+	{
+		"SpendingID" : 10,
+		"UserID" : 1,
+		"ExpenseDate" : "2026-01-25",
+		"Amount" : 129.02
 	}
 ]
