@@ -58,5 +58,47 @@
 		"UserID" : 1,
 		"ExpenseDate" : "2026-01-25",
 		"Amount" : 129.02
+	},
+	{
+		"SpendingID" : 11,
+		"UserID" : 1,
+		"ExpenseDate" : "2026-01-27",
+		"Amount" : 19.26
+	},
+	{
+		"SpendingID" : 12,
+		"UserID" : 1,
+		"ExpenseDate" : "2026-01-30",
+		"Amount" : 14.97
+	},
+	{
+		"SpendingID" : 13,
+		"UserID" : 1,
+		"ExpenseDate" : "2026-01-30",
+		"Amount" : 15.34
+	},
+	{
+		"SpendingID" : 14,
+		"UserID" : 1,
+		"ExpenseDate" : "2026-01-31",
+		"Amount" : 3.00
+	},
+	{
+		"SpendingID" : 15,
+		"UserID" : 1,
+		"ExpenseDate" : "2026-02-01",
+		"Amount" : 5.00
+	},
+	{
+		"SpendingID" : 16,
+		"UserID" : 1,
+		"ExpenseDate" : "2026-02-01",
+		"Amount" : 8.58
+	},
+	{
+		"SpendingID" : 17,
+		"UserID" : 1,
+		"ExpenseDate" : "2026-02-02",
+		"Amount" : 6.00
 	}
 ]
