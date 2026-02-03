@@ -1,4 +1,4 @@
-fetch('Spending.json?v=' + Date.now()) // cache-busting
+fetch('Spending.json?v=' + Date.now())
   .then(response => response.json())
   .then(data => {
     const tableBody = document.getElementById('spending-table');
