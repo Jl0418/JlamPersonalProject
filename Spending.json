@@ -100,5 +100,119 @@
 		"UserID" : 1,
 		"ExpenseDate" : "2026-02-02",
 		"Amount" : 6.00
+	},
+	{
+		"SpendingID" : 18,
+		"UserID" : 1,
+		"ExpenseDate" : "2026-02-06",
+		"Amount" : 102.99
+	},
+	{
+		"SpendingID" : 19,
+		"UserID" : 1,
+		"ExpenseDate" : "2026-02-06",
+		"Amount" : 102.99
+	},
+	{
+		"SpendingID" : 20,
+		"UserID" : 1,
+		"ExpenseDate" : "2026-02-09",
+		"Amount" : 126.49
+	},
+	{
+		"SpendingID" : 21,
+		"UserID" : 1,
+		"ExpenseDate" : "2026-02-10",
+		"Amount" : 8.88
+	},
+	{
+		"SpendingID" : 22,
+		"UserID" : 1,
+		"ExpenseDate" : "2026-02-11",
+		"Amount" : 146.98
+	},
+	{
+		"SpendingID" : 23,
+		"UserID" : 1,
+		"ExpenseDate" : "2026-02-11",
+		"Amount" : 12.36
+	},
+	{
+		"SpendingID" : 24,
+		"UserID" : 1,
+		"ExpenseDate" : "2026-02-12",
+		"Amount" : 48.82
+	},
+	{
+		"SpendingID" : 25,
+		"UserID" : 1,
+		"ExpenseDate" : "2026-02-16",
+		"Amount" : 10.05
+	},
+	{
+		"SpendingID" : 26,
+		"UserID" : 1,
+		"ExpenseDate" : "2026-02-16",
+		"Amount" : 8.15
+	},
+	{
+		"SpendingID" : 27,
+		"UserID" : 1,
+		"ExpenseDate" : "2026-02-19",
+		"Amount" : 58.70
+	},
+	{
+		"SpendingID" : 28,
+		"UserID" : 1,
+		"ExpenseDate" : "2026-02-20",
+		"Amount" : 14.52
+	},
+	{
+		"SpendingID" : 29,
+		"UserID" : 1,
+		"ExpenseDate" : "2026-02-20",
+		"Amount" : 44.64
+	},
+	{
+		"SpendingID" : 30,
+		"UserID" : 1,
+		"ExpenseDate" : "2026-02-23",
+		"Amount" : 15.62
+	},
+	{
+		"SpendingID" : 31,
+		"UserID" : 1,
+		"ExpenseDate" : "2026-02-23",
+		"Amount" : 70.47
+	},
+	{
+		"SpendingID" : 32,
+		"UserID" : 1,
+		"ExpenseDate" : "2026-02-23",
+		"Amount" : 23.73
+	},
+	{
+		"SpendingID" : 33,
+		"UserID" : 1,
+		"ExpenseDate" : "2026-02-25",
+		"Amount" : 24.63
+	},
+	{
+		"SpendingID" : 34,
+		"UserID" : 1,
+		"ExpenseDate" : "2026-02-26",
+		"Amount" : 8.18
+	},
+	{
+		"SpendingID" : 35,
+		"UserID" : 1,
+		"ExpenseDate" : "2026-02-27",
+		"Amount" : 32.09
+	},
+	{
+		"SpendingID" : 36,
+		"UserID" : 1,
+		"ExpenseDate" : "2026-02-27",
+		"Amount" : 59.88
 	}
 ]
